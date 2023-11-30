@@ -1,0 +1,400 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Cardo', serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  color: #000; 
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed
+}
+#header2 {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/specijal1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed
+}
+#header3{
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/restoran.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed
+}
+#header4{
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/kuhinja.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed
+}
+#header5{
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/autor.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed
+}
+.container {
+  background-color: #fbfbda;
+  opacity: 1;
+  padding: 15px 10%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+nav h1{
+  font-size: 30px;
+  
+}
+nav h1 span{
+  color: #FFA07A; 
+}
+
+
+.logo {
+  width: 100px;
+  border-radius: 100px;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+  font-weight: bold;
+}
+
+nav ul li a {
+  color: #000;  
+  text-decoration: none;
+  font-size: 20px;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: '';
+  width: 0%;
+  height: 3px;
+  background: #FFA07A;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+#header-text{
+  color: #fff;
+  display: flex;
+  justify-content:center;
+  margin-top: 260px;
+  font-size: 30px;
+  text-transform: uppercase;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
+@keyframes fadeIn{
+  from  {
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+#header-text3{
+  color: #fff;
+  display: flex;
+  justify-content:center;
+  margin-top: 150px;
+  font-size: 30px;
+  text-transform: uppercase;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
+@keyframes fadeIn{
+  from  {
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+#dugme{
+  margin-top: 30px;
+  margin-left:   40%;
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
+}
+@keyframes fadeIn{
+  from  {
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+#dugme a{
+  text-decoration: none;
+}
+.btn{
+  display: block;
+  width: fit-content;
+  border: none;
+  padding: 15px 35px;
+  background: #FFA07A;
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.5s;
+}
+.btn:hover{
+  background: #fdb89c;
+}
+footer{ 
+  height: 450px;
+  background-color: #292831;
+}
+#footer-content{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.social{
+  width: 30%;
+}
+.social h3{
+  padding: 10px 0px;
+  color: #fff;
+  font-size: 20px;
+}
+.social h3 img{
+  width: 20px;
+}
+.social h2{
+  color: #fff;
+  padding: 10px 0px;
+}
+.social h1{
+  padding: 5px 10px;
+  color: #fff;
+}
+.social h1 span{
+  color: #FFA07A;
+}
+form{
+  padding: 10px 15px;
+}
+form input, form textarea{
+  width: 300px;
+  border: 0;
+  outline: none;
+  background: #212121;
+  padding: 10px 15px;
+  margin: 15px 0;
+  color: #fff;
+  font-size: 15px;
+}
+::placeholder{
+  color: #fff;
+}
+#submit{
+  display: block;
+  width: fit-content;
+  border: none;
+  padding: 15px 25px;
+  background: #FFA07A;
+  text-decoration: none;
+  font-size: 15px;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.5s;
+}
+#submit:hover{
+  background: #fdb89c;
+}
+#copyright{
+  width: 100%;
+  height: 40px;
+  padding-top: 10px;
+  background-color: #212121;
+  color: #fff;
+  text-align: center;
+}
+#sadrzaj{
+  width: 100%;
+  height: 100vh;
+  margin-top: 0px;
+  background-color: #fbfbda;
+  display: flex;
+  align-items: center;
+}
+
+#specijali {
+  width: 80%;
+  margin: 40px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.hrana {
+  width: 30%; 
+  margin: 10px;
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 2px 2px 2px 2px #000;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  transition: background 0.5s, transform 0.5s;
+}
+.hrana:hover{
+  background-color: #dcdcdc;
+  transform: translateY(-10px);
+}
+.hrana img {
+  max-width: 100%;
+  height: auto; 
+  padding: 5px;
+}
+
+.hrana p{
+  color: #000;
+  font-weight: bolder;
+  font-size: 20px;
+  margin-left: 5px;
+  text-align: center; 
+}
+#holder{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#rezervacija{
+  width: 400px;
+}
+#rezervacija form .btn{
+  margin-left: 50px;
+  opacity: 0;
+  animation: fadeIn 2.5s ease-in-out forwards;
+}
+@keyframes fadeIn{
+  from  {
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+#rezervacija form input[type="time"]{
+  color: #000;
+  background: #fbfbda;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
+@keyframes fadeIn{
+  from  {
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+#rezervacija form input[type="date"]{
+  color: #000;
+  background: #fbfbda;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
+@keyframes fadeIn{
+  from  {
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+#onama{
+  width: 100%;
+  background-color: #fbfbda;
+  padding: 10px;
+}
+#tekst{
+  width: 350px;
+  margin-left: 40%;
+  padding: 10px;
+  border-bottom: 3px solid #FFA07A;
+  font-size: 20px;
+  font-weight: bolder;
+  text-align: center;
+}
+#onama-slike{
+  display: flex;
+  justify-content: center;
+}
+#onama-slike img{
+  width: 30%;
+  padding: 10px;
+}
+#kontakt{
+  width: 100%;
+  height: 400px;
+  background-color: #fbfbda;
+}
+#kontakt-sadrzaj{
+  padding: 25px;
+  
+  
+}
+#ime{
+  width: max-content;
+  padding: 5px;
+  border-top: 2px solid #FFA07A;
+  border-bottom: 2px solid #FFA07A;
+}
+#adresa{
+  width: max-content;
+  margin-top: 50px;
+  padding: 5px;
+  border-top: 2px solid #FFA07A;
+  border-bottom: 2px solid #FFA07A;
+}
+#fakultet{
+  width: max-content;
+  margin-top: 50px;
+  padding: 5px;
+  border-top: 2px solid #FFA07A;
+  border-bottom: 2px solid #FFA07A;
+}
